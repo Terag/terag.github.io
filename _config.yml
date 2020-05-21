@@ -12,45 +12,44 @@ lang: fr-FR
 title: "Victor Rouquette"
 
 # A description of your site for meta tag, search engine results.
-description: "Software Engineer"
+description: "Ingénieur logiciel à temps plein et bidouilleur à temps partiel"
 
 # Theme based on a fork from https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
-remote_theme: terag/Scriptor-Jekyll-Theme
+#remote_theme: terag/Scriptor-Jekyll-Theme
+remote_theme: justgoodthemes/Scriptor-Jekyll-Theme
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://scriptor-jekyll.netlify.com"
+url: "https://victor.rouquette.me"
 
 # Favicon
-favicon: images/favicon.png
+favicon:
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""
 
 # Site navigation - each item must have a title and a url.
 navigation:
-  - text: Home
+  - text: Accueil
     url: /
-  - text: About
-    url: /about/
-  - text: Style Guide
-    url: /style-guide/
-  - text: Tags
-    url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+  - text: Projets
+    url: https://github.com/Terag?tab=repositories
+  - text: Archives
+    url: /archives
+  - text: À Propos
+    url: /about
 
 # The shortname for your Disqus site to enable comments.
-disqus: justgoodthemes
+disqus: ""
 
 # Colors
 accent_color: '#2d72d9'
 
 # Site footer
 footer:
-  content: "&copy; Scriptor all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
+  content: "Contenu par Victor Rouquette.<br/><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"><img alt=\"Licence Creative Commons\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a><br/>Theme par [JustGoodThemes](https://www.justgoodthemes.com)."
   has_social: true
 
 # Plugins
@@ -72,3 +71,11 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+# Collections Folder
+collections_dir: collections
+
+# Collections
+collections:
+  games:
+    output: true
