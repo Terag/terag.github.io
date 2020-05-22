@@ -21,7 +21,7 @@ title: Archives
     <li>
       <div>
         {% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
-        {% capture this_month %}{{ post.date | date: "%-m" }}{% case m %}
+        {% capture this_month %}{% assign m = page.date | date: "%-m" %}{% case m %}
           {% when '1' %}Janv
           {% when '2' %}Fevr
           {% when '3' %}Mars
