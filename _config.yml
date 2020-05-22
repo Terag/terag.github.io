@@ -22,7 +22,7 @@ url: 'https://victor.rouquette.me'
 
 author: "Victor Rouquette"              # change to your full name
 
-avatar: /ssets/img/author_small.png   # support internet resources
+avatar: /assets/img/author_small.png   # support internet resources
 
 github:
   username: Terag             # change to your github username
