@@ -21,7 +21,10 @@ title: Archives
     <li>
       <div>
         {% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
-        {% capture this_month %}{% assign m = page.date | date: "%-m" %}{% case m %}
+        {% capture this_month %}{{ post.date | date: "%b" }}{% endcapture %}
+        <span class="date day">{{ this_day }}</span>
+        <span class="date month small text-muted">
+        {% assign m = page.date | date: "%-m" %}{% case m %}
           {% when '1' %}Janv
           {% when '2' %}Fevr
           {% when '3' %}Mars
@@ -34,9 +37,8 @@ title: Archives
           {% when '10' %}Oct
           {% when '11' %}Nov
           {% when '12' %}Déc
-        {% endcase %}{% endcapture %}
-        <span class="date day">{{ this_day }}</span>
-        <span class="date month small text-muted">{{ this_month }}</span>
+        {% endcase %}
+        </span>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </div>
     </li>
