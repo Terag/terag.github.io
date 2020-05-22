@@ -1,5 +1,5 @@
 ---
-title: About
+title: À Propos
 ---
 
 # Bonjour et bienvenue !
