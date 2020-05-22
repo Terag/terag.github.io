@@ -22,13 +22,16 @@ url: 'https://victor.rouquette.me'
 
 author: "Victor Rouquette"              # change to your full name
 
-avatar: /assets/img/author.png   # support internet resources
+avatar: /ssets/img/author_small.png   # support internet resources
 
 github:
   username: Terag             # change to your github username
 
 twitter:
-  username:            # change to your twitter username
+  username:                  # change to your twitter username
+
+linkedin:
+  username: victorrouquette
 
 social:
   name: "Victor Rouquette"                  # it will shows as the copyright owner in Footer
