@@ -15,35 +15,35 @@ $(function() {
 
     var year = Math.floor(seconds / 31536000);
     if (year >= 1) {
-      return year + " year" + (year > 1 ? "s" : "") + " ago";
+      return year + " an" + (year > 1 ? "s" : "");
     }
 
     var month = Math.floor(seconds / 2592000);
     if (month >= 1) {
-      return month + " month" + (month > 1 ? "s" : "") + " ago";
+      return month + " mois" + (month > 1 ? "s" : "");
     }
 
     var week = Math.floor(seconds / 604800);
     if (week >= 1) {
-      return week + " week" + (week > 1 ? "s" : "") + " ago";
+      return week + " semaine" + (week > 1 ? "s" : "");
     }
 
     var day = Math.floor(seconds / 86400);
     if (day >= 1) {
-      return day + " day" + (day > 1 ? "s" : "") + " ago";
+      return day + " jour" + (day > 1 ? "s" : "");
     }
 
     var hour = Math.floor(seconds / 3600);
     if (hour >= 1) {
-      return hour + " hour" + (hour > 1 ? "s" : "") + " ago";
+      return hour + " heur" + (hour > 1 ? "s" : "");
     }
 
     var minute = Math.floor(seconds / 60);
     if (minute >= 1) {
-      return minute + " minute" + (minute > 1 ? "s" : "") + " ago";
+      return minute + " minute" + (minute > 1 ? "s" : "");
     }
 
-    return (isLastmod? "just" : "Just") + " now";
+    return (isLastmod? "à" : "À") + " l'instant";
   }
 
 
