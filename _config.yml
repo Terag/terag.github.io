@@ -56,7 +56,7 @@ timezone: Europe/Paris
 
 google_analytics:
   # Fill with your Google Analytics ID
-  id: ''
+  id: 'UA-130851533-2'
   # The Google Analytics pageviews switch.
 
   pv:
